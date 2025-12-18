@@ -18,7 +18,7 @@ The assignment presents a simple ordering system with *Customers*, *Orders*,
 
 Steps:
 
-- [Fetch Code-drop *c1-customer*](#1-fetch-code-drop-c1-customer)
+- [Fetch Code-drop *c2-customer*](#1-fetch-code-drop-c2-customer)
 
 - [Implement Class *Customer*](#2-implement-class-customer)
 
@@ -35,10 +35,10 @@ Steps:
 
 &nbsp;
 
-## 1. Fetch Code-drop *c1-customer*
+## 1. Fetch Code-drop *c2-customer*
 
 Fetch a code-drop from branch
-[*c1-customer*](https://github.com/sgra64/ordering-system/tree/c1-customer)
+[*c2-customer*](https://github.com/sgra64/ordering-system/tree/c2-customer)
 from the [*se1-repo*](https://github.com/sgra64/ordering-system.git).
 
 Make sure you have added the remote *se1-repo*:
@@ -52,32 +52,32 @@ se1-repo        https://github.com/sgra64/ordering-system (push)
 ```
 
 ```sh
-# fetch branch 'c1-customer' from 'se1-repo'
-git fetch se1-repo c1-customer
+# fetch branch 'c2-customer' from 'se1-repo'
+git fetch se1-repo c2-customer
 
 # show new remote branch
 git branch -avv
 ```
 ```
-remotes/origin/c1-customer    363dcbb add README.md
+remotes/origin/c2-customer    363dcbb add README.md
 ```
 
-Create new local branch `c1-customer` off the *main* branch and show that
+Create new local branch `c2-customer` off the *main* branch and show that
 you are on that branch:
 
 ```sh
 git branch
 ```
 ```
-c1-customer
+c2-customer
 ```
 
 Chek-out paths `src/main` and `src/resources` from the code-drop from the
 new branch and see the new additions:
 
 ```sh
-git checkout se1-repo/c1-customer -- src/main
-git checkout se1-repo/c1-customer -- src/resources
+git checkout se1-repo/c2-customer -- src/main
+git checkout se1-repo/c2-customer -- src/resources
 
 git status                      # see the delta of the code-drop
 
@@ -162,7 +162,7 @@ Implement class *Customer* in package *"datamodel"* according to:
 Checkout the test for *Customer*:
 
 ```sh
-git checkout se1-repo/c1-customer -- src/tests/datamodel/Customer_0_BaseTests.java
+git checkout se1-repo/c2-customer -- src/tests/datamodel/Customer_0_BaseTests.java
 ```
 
 Make sure your *Customer*-implementation compiles with the test.
@@ -210,7 +210,7 @@ which are often given as *"sanity tests"*.
 Checkout the test for *Customer*:
 
 ```sh
-git checkout se1-repo/c1-customer -- src/tests/datamodel/Customer_1_SanityTests.java
+git checkout se1-repo/c2-customer -- src/tests/datamodel/Customer_1_SanityTests.java
 ```
 
 Make sure your *Customer*-implementation still compiles with the test.
@@ -258,7 +258,7 @@ and how it represents multiple customer contacts.
 Check *Customer* contacts tests and validate your implementation:
 
 ```sh
-git checkout se1-repo/c1-customer -- src/tests/datamodel/Customer_3_ContactsTests.java
+git checkout se1-repo/c2-customer -- src/tests/datamodel/Customer_3_ContactsTests.java
 ```
 ```sh
 mk run-tests -c datamodel.Customer_3_ContactsTests
@@ -372,7 +372,7 @@ Implement all three properties of the *Singleton* pattern as in
 When you are done, check *Customer* names tests and validate your implementation:
 
 ```sh
-git checkout se1-repo/c1-customer -- src/tests/datamodel/Customer_2_NamesTests.java
+git checkout se1-repo/c2-customer -- src/tests/datamodel/Customer_2_NamesTests.java
 ```
 ```sh
 mk run-tests -c datamodel.Customer_2_NamesTests
@@ -420,7 +420,7 @@ Run all *Customer* Tests
 
 
 ```sh
-git checkout se1-repo/c1-customer -- src/tests/datamodel/Customer_3_ContactsTests.java
+git checkout se1-repo/c2-customer -- src/tests/datamodel/Customer_3_ContactsTests.java
 ```
 ```sh
 mk run-tests
@@ -431,4 +431,4 @@ Test run finished after 662 ms
 [         0 tests failed          ]
 ```
 
-If all tests pass, commit your implementation to branch `c1-customer`.
+If all tests pass, commit your implementation to branch `c2-customer`.
