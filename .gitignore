@@ -9,6 +9,10 @@
 .env/
 .vscode/
 .libs/
+<<<<<<< HEAD
+=======
+libs
+>>>>>>> origin/c3-datamodel
 
 # ignore generated directories and compiled output
 bin/

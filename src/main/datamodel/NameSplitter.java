@@ -68,7 +68,7 @@ public interface NameSplitter {
     public static NameSplitter getInstance() {
         // 
         // replace with actual NameSplitterImpl.getInstance();
-        NameSplitter instance = null; // NameSplitterImpl.getInstance();
+        NameSplitter instance = NameSplitterImpl.getInstance();
         // 
         return Optional.ofNullable(instance).orElse(
                 // return mock instance, if no actual instance is provided

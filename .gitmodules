@@ -4,6 +4,9 @@
 [submodule ".vscode"]
 	path = .vscode
 	url = https://github.com/sgra64/gitmodule-vscode-java.git
+<<<<<<< HEAD
 [submodule "libs"]
 	path = libs
 	url = https://github.com/sgra64/gitmodule-libs-jars.git
+=======
+>>>>>>> origin/c3-datamodel

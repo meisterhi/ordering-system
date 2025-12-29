@@ -1,6 +1,7 @@
 package datamodel;
 
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.Order;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
@@ -79,7 +80,7 @@ public class Customer_0_BaseTests {
     @Test @Order(060)
     public void test_060_chainable_methods() {
         assertEquals(eric, eric.setId(100L));
-        assertEquals(eric, eric.setName("Eric Meyer"));
+        assertEquals(eric, eric.name("Eric Meyer"));
         assertEquals(eric, eric.setName("Meyer"));
         assertEquals(eric, eric.setFirstNames("Eric"));
     }

@@ -65,7 +65,8 @@ public class Application {
                 } else {
                     Runnable runnable = null;
                     switch(rn) {
-                        case "RunCustomerDemo": runnable = new RunCustomerDemo(); break;
+                        // case "RunCustomerDemo": runnable = new RunCustomerDemo(); break;
+                        case "RunCustomerDemo": runnable = new RunDatamodelDemo(); break;
                     }
                     if(runnable != null) {
                         context.log().info(String.format("executing: '%s.class'", runnable.getClass().getSimpleName()));
