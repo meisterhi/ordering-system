@@ -70,10 +70,7 @@ public class Customer {
 
     public Customer setFirstNames(String firstNames) {
         if (firstNames == null) {
-            throw new IllegalArgumentException("firstNames argument is null");
-        }
-        if (this.firstNames != null && !this.firstNames.isEmpty()) {
-            return this; // firstName already set, do not change
+            throw new IllegalArgumentException("firstName argument is null");
         }
         this.firstNames = firstNames.trim();
         return this;
