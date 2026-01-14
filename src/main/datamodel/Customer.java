@@ -16,11 +16,7 @@ public class Customer {
     }
 
     public Customer(String name){
-        this();
-        var parts = NameSplitter.split(name).orElse(new SplitName("", ""));
-
-        this.name = parts.name();
-        this.firstNames = parts.firstNames();
+        name(name);
     }
 
     public Customer(long id, String name, String firstNames, String contacts) {
@@ -30,6 +26,13 @@ public class Customer {
         setContacts(contacts);
     }
 
+    public Customer name(String fullName) {
+        var parts = NameSplitter.split(fullName).orElse(new SplitName("", ""));
+
+        this.name = parts.name();
+        this.firstNames = parts.firstNames();
+        return this;
+    }
 
     public Customer setId(long id) {
        if(id <= 0) {

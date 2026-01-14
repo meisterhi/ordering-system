@@ -91,4 +91,10 @@ public class Customer_0_BaseTests {
         assertEquals(eric, eric.addContact("eme@gmail.com"));
         assertEquals(eric, eric.removeContact(1));
     }
+    @Test @Order(062)
+    public void test_062_contact_index() {
+        Customer c = new Customer("Meils Smith");
+        assertEquals(c.getFirstNames(), "Meils");
+        assertEquals(c.getName(), "Smith");
+        }
 }
